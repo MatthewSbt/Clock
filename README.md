@@ -83,4 +83,4 @@ Licenza
 Distribuito sotto la Licenza MIT. Vedi LICENSE per ulteriori dettagli.
 
 Contatti
-Per domande o suggerimenti, contattami su 
+Per domande o suggerimenti, contattami su  aggiornamentiutilita@protonmail.com
