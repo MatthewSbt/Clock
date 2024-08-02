@@ -51,4 +51,3 @@ updateSpeedtestResults();
 
 // Set interval to update results every 60 seconds
 setInterval(updateSpeedtestResults, 60000);
-
