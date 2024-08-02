@@ -1,86 +1,38 @@
-### Network Speedtest Web Application
+Speedtest Web Application
 
-**Descrizione**
-Questa applicazione web permette di eseguire un test di velocità della rete (download, upload e ping) e visualizzare i risultati in tempo reale. Utilizza un server backend basato su Flask che esegue i test di velocità utilizzando la libreria speedtest-cli, e un frontend HTML/CSS/JavaScript che recupera e visualizza i risultati.
+Questo progetto è una semplice applicazione web che esegue un test di velocità della connessione Internet e visualizza i risultati in un'interfaccia utente accattivante. Utilizza un backend in Python con Flask per eseguire il test e un frontend in HTML, CSS e JavaScript per mostrare i risultati.
 ![brave_I6LTpkcyXC](https://github.com/user-attachments/assets/cfb9479f-66d7-4b4d-a76b-34ad328320d6)
-**Funzionalità**
-Test di Velocità della Rete: Misura la velocità di download e upload e il tempo di ping della connessione Internet.
-Visualizzazione dei Risultati: Mostra i risultati del test in una pagina web con un'animazione di caricamento.
+Funzionalità
+
+Test di Velocità: Esegue test di velocità di download, upload e ping.
+Interfaccia Utente Dinamica: Visualizza i risultati del test e offre un'opzione per scaricarli in formato PDF.
+Tema Scuro e Chiaro: Permette di passare tra modalità chiara e scura.
 Aggiornamenti Automatici: I risultati vengono aggiornati automaticamente ogni 60 secondi.
-Gestione degli Errori: Gestione dei possibili errori di rete e di fetch per garantire un'esperienza utente fluida.
-Tecnologie Utilizzate
-Backend: Python, Flask, speedtest-cli
-Frontend: HTML, CSS, JavaScript
-CORS: Flask-CORS per gestire le richieste cross-origin
-Installazione
-Prerequisiti
-Python 3.x
-Node.js (per servire i file statici se necessario)
-Pip (gestore di pacchetti per Python)
-Passaggi
-Clona il Repository
+Animazioni e Stili: Include effetti visivi come animazioni LED e gocce d'acqua.
+Struttura del Progetto
 
-bash
-Copy code
+LICENSE: File di licenza del progetto. Specifica la licenza utilizzata.
+README.md: Questo file, con le istruzioni e la documentazione del progetto.
+fetchSpeedtest.js: Script JavaScript che gestisce la logica per aggiornare i risultati del test di velocità e gestire le interazioni dell'utente.
+index.html: Pagina HTML principale con l'interfaccia utente per visualizzare i risultati del test e le animazioni.
+speedtest_server.py: Script Python che esegue il test di velocità e restituisce i risultati in formato JSON tramite un'API RESTful.
+Come Usare
+Configura l'Ambiente:
 
-> git clone https://github.com/<tuo-utente>/<tuo-repo>.git
-> cd <tuo-repo>
+Assicurati di avere Python e Flask installati.
+Installa le dipendenze necessarie con pip install flask speedtest-cli flask-cors.
+Esegui il Server:
 
-Installa le Dipendenze Python
+Avvia il server Python eseguendo python speedtest_server.py.
+Il server sarà in ascolto su http://127.0.0.1:5000.
+Accedi all'Applicazione:
 
-Crea un ambiente virtuale e installa le dipendenze:
+Apri index.html nel tuo browser per visualizzare l'interfaccia utente e i risultati del test di velocità.
+Scarica i Risultati:
 
-bash
-Copy code
-
-> python -m venv venv
-> source venv/bin/activate  # Su Windows usa: venv\Scripts\activate
-> pip install -r requirements.txt
-> requirements.txt:
-
-Copy code
-
-> Flask
-> flask-cors
-> speedtest-cli
-> Avvia il Server Backend
-
-bash
-Copy code
-
-> python speedtest_server.py
-
-**Il server verrà avviato su** http://127.0.0.1:5000.
-
-Servi i File Statici
-
-Se hai bisogno di servire i file statici (HTML, CSS, JS), puoi utilizzare un server statico come http-server (Node.js) o configurare Flask per servire i file statici.
-
-Se usi http-server, installa e avvia il server:
-
-bash
-Copy code
-
-> npm install -g http-server
-> http-server ./ --port 8080
-
-Accedi alla tua applicazione su http://localhost:8080.
-
-**Uso**
-Accesso alla Pagina: Apri il browser e vai su http://localhost:8080 (o su un'altra porta se hai configurato diversamente).
-Visualizzazione dei Risultati: I risultati del test di velocità saranno visualizzati automaticamente dopo il caricamento della pagina e verranno aggiornati ogni 60 secondi.
-Contribuire
-Se desideri contribuire al progetto, segui questi passaggi:
-
-Fork del Repository
-Crea un Branch: git checkout -b nome-del-tuo-branch
-Fai le tue Modifiche
-Commit e Push: git commit -am 'Aggiungi nuova funzionalità' e git push origin nome-del-tuo-branch
-Crea una Pull Request
-Assicurati di seguire le linee guida per il contributo e di testare le tue modifiche.
+Clicca sul pulsante "Download PDF" per scaricare i risultati del test in formato PDF.
+Contributi
+Contributi e miglioramenti sono benvenuti! Per contribuire, per favore apri una richiesta di pull (pull request) con le tue modifiche.
 
 Licenza
-Distribuito sotto la Licenza MIT. Vedi LICENSE per ulteriori dettagli.
-
-Contatti
-Per domande o suggerimenti, contattami su  aggiornamentiutilita@protonmail.com
+Questo progetto è concesso in licenza sotto la Licenza MIT - vedi il file LICENSE per i dettagli.
