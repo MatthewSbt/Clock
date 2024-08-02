@@ -2,7 +2,7 @@
 
 **Descrizione**
 Questa applicazione web permette di eseguire un test di velocità della rete (download, upload e ping) e visualizzare i risultati in tempo reale. Utilizza un server backend basato su Flask che esegue i test di velocità utilizzando la libreria speedtest-cli, e un frontend HTML/CSS/JavaScript che recupera e visualizza i risultati.
-
+![brave_I6LTpkcyXC](https://github.com/user-attachments/assets/cfb9479f-66d7-4b4d-a76b-34ad328320d6)
 **Funzionalità**
 Test di Velocità della Rete: Misura la velocità di download e upload e il tempo di ping della connessione Internet.
 Visualizzazione dei Risultati: Mostra i risultati del test in una pagina web con un'animazione di caricamento.
